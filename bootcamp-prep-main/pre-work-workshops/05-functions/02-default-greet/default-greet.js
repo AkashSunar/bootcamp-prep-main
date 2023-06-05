@@ -1,5 +1,5 @@
 // YOUR CODE BELOW
-function defaultGreet(fName,lName="doe")
+function defaultGreet(fName,lName="Doe")
 {
     return "Hi "+fName+" "+lName+ "!"
 }
