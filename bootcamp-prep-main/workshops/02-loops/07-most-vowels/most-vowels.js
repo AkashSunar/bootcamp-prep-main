@@ -30,5 +30,5 @@ function mostVowels(sentence){
         return false
        }
 }
-// mostVowels("my name is akash sunar")
-mostVowels('why dry my sly lynx?')
+mostVowels(" i am  a keeper with some real rhythms and cauliflower")
+// mostVowels('why dry my sly lynx?')
