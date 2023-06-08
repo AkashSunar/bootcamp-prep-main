@@ -2,6 +2,7 @@
 let testOneMessage = 'test failing';
 
 function testOne() {
+  testOneMessage="test succeeding"
   return testOneMessage;
 }
 
@@ -13,11 +14,12 @@ let testTwoMessage = 'test failing';
 function testTwo() {
   helperFunc();
   return testTwoMessage;
-}
+  }
 
 function helperFunc(a) {
   a = 'test succeeding';
-  return a;
+  testTwoMessage=a
+  // return testTwoMessage;
 }
 
 
@@ -33,7 +35,7 @@ function testThree(testThreeMessage) {
   return msg;
 
   function getMessage(value) {
-    if (value) {
+    if (!value) {
       return testThreeMessage;
     }
 
@@ -49,7 +51,7 @@ function testFour(msg) {
   function innerFunc(msg) {
     msg = msg
 
-    function doubleInner(msg) {
+    function doubleInner(ms) {
       testFourMessage = msg;
       return testFourMessage;
     }
