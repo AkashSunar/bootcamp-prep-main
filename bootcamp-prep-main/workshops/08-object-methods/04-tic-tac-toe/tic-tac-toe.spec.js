@@ -1,4 +1,4 @@
-describe('ticTacToe', () => {
+ describe('ticTacToe', () => {
   // save a stringified copy of your ticTacToe board
   let boardCopy = JSON.stringify(ticTacToe.board);
 

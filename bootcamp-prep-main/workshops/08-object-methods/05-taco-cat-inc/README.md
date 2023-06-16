@@ -37,6 +37,8 @@ let tacoCatInc = {
   },
 
   cash: 0
+
+  
 };
 
 tacoCatInc.currentInventory(); // => 1710
