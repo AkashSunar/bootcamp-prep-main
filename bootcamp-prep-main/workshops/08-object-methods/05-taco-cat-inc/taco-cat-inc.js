@@ -18,7 +18,7 @@ let tacoCatInc = {
     'cat nip': {cost: 0.5, quantity: 100},
     'treat dust': {cost: 0.1, quantity: 100}
   },
-  cash: 0,
+  // cash: 0,
   
   currentInventory:function(){
     let sum=0;
@@ -43,18 +43,17 @@ let tacoCatInc = {
       totalSale +=costOfItem;
       // console.log(totalSale)
     }
-    // this.cash+=totalSale;
+    this.cash+=totalSale;
     // console.log(totalSale)
     return totalSale;
-  }
-
-
+  },
+  cash:0,
 };
 tacoCatInc.currentInventory();
 let order= {
   gourmetShell: 'hard treat shell',
   gourmetFishFilling: 'salmon'
 };
-console.log(tacoCatInc.sale(order));
 // console.log(tacoCatInc.sale(order));
-// YOUR CODE BELOW
+// console.log(tacoCatInc.sale(order));
+
